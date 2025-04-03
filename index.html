@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <!-- Se agregó correctamente <head> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Comida Rápida</title>
+    <link rel="stylesheet" href="style.css"> <!-- Conecta con CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Fuente -->
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a FastGamer Food</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contenedor"> <!-- Contenedor principal -->
+        <div id="menu"> <!-- Menú de productos -->
+            <h2>Nuestro Menú</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="img/hamburguesa.jpg" alt="Hamburguesa Gamer">
+                    <h3>Hamburguesa Gamer</h3>
+                    <p>Deliciosa hamburguesa con ingredientes premium.</p>
+                    <span class="precio">$5.99</span>
+                    <button>Añadir al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="img/pizza.jpg" alt="Pizza Pixelada">
+                    <h3>Pizza Pixelada</h3>
+                    <p>Pizza con un toque retro y mucho queso.</p>
+                    <span class="precio">$7.99</span>
+                    <button>Añadir al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="img/batido.jpg" alt="Batido de Energía">
+                    <h3>Batido de Energía</h3>
+                    <p>Refrescante batido para seguir jugando sin parar.</p>
+                    <span class="precio">$3.99</span>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    
+        <button id="mostrar-carrito">🛒 Ver Carrito (<span id="contador-carrito">0</span>)</button>
+
+        <section id="carrito" style="display: none;">
+            <h2>Carrito de Compras</h2>
+            <div id="lista-carrito"></div>
+            <p>Total: <span id="total">$0.00</span></p>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+            <!-- Campo para ingresar código de descuento -->
+<input type="text" id="codigo-descuento" placeholder="Código de descuento">
+<button id="aplicar-descuento">Aplicar</button>
+
+<section id="descuento">
+    <h3>¿Tienes un código de descuento?</h3>
+    <input type="text" id="codigo-descuento" placeholder="Ingresa el código">
+    <button id="aplicar-descuento">Aplicar</button>
+</section>
+
+<section id="metodo-pago">
+    <h3>Selecciona un método de pago</h3>
+    <select id="metodo-pago">
+        <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+        <option value="efectivo">Efectivo</option>
+    </select>
+</section>
+
+
+<!-- Opciones de pago -->
+<h3>Método de Pago</h3>
+<select id="metodo-pago">
+    <option value="tarjeta">Tarjeta</option>
+    <option value="efectivo">Efectivo</option>
+</select>
+
+            <button id="pagar">💳 Pagar</button>
+            <button id="cerrar-carrito">❌ Cerrar</button>
+        </section>
+    </section>
+
+    <script src="script.js"></script> <!-- Conecta con JavaScript -->
+</body>
+</html>
+
